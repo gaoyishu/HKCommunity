@@ -37,7 +37,7 @@ public class UserService {
         User user = new User();
         user.setUsername(registerUser.get("username"));
         user.setPassword(bCryptPasswordEncoder.encode(registerUser.get("password")));
-        user.setUserNickName(registerUser.get("UserNickName"));
+        user.setUserNickName(registerUser.get("userNickName"));
         user.setWeChat(registerUser.get("weChat"));
         user.setRoles("DEV,PM");
         user.setStatus(UserStatus.CAN_USE);
